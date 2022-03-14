@@ -81,38 +81,38 @@
 		                    }
 		                };
 		                // create a JSON object
-                    const data = { username: 'example' };
+                  //   const data = { username: 'example' };
 
-                    fetch('https://jsonplaceholder.typicode.com/users', {
-                      method: 'POST', // or 'PUT'
-                      headers: {
-                        'Content-Type': 'application/json',
-                      },
-                      body: JSON.stringify(data),
-                    })
-                    .then(response => response.json())
-                    .then(data => {
-                      console.log('Success:', data);
-                    })
-                    .catch((error) => {
-                      console.error('Error:', error);
-                    });
-                  }
-                    // const json = {
-		                //     "id": "1",
-                    //     "Date":"14 Mar 2022",
-                    //     "Time":"10:00AM",
-                    //     "PickupPoint":"Ang Mo Kio",
-                    //     "Destination":"Sun Plaza",
-                    //     "Current_Location_Latitude":"1.3581",
-                    //     "Current_Location_Longitude":"103.8956"
-                    // }
-		                // xhttp.open('POST', 'https://localhost:7299/api/bookingitems/');
-		                // // set `Content-Type` header
-		                // xhttp.setRequestHeader('Content-Type', 'application/json');
-		                // // send request with JSON payload
-		                // xhttp.send(JSON.stringify(json));
-                  
+                  //   fetch('https://jsonplaceholder.typicode.com/users', {
+                  //     method: 'POST', // or 'PUT'
+                  //     headers: {
+                  //       'Content-Type': 'application/json',
+                  //     },
+                  //     body: JSON.stringify(data),
+                  //   })
+                  //   .then(response => response.json())
+                  //   .then(data => {
+                  //     console.log('Success:', data);
+                  //   })
+                  //   .catch((error) => {
+                  //     console.error('Error:', error);
+                  //   });
+                  // }
+                    const json = {
+		                    "id": "1",
+                        "Date":"14 Mar 2022",
+                        "Time":"10:00AM",
+                        "PickupPoint":"Ang Mo Kio",
+                        "Destination":"Sun Plaza",
+                        "Current_Location_Latitude":"1.3581",
+                        "Current_Location_Longitude":"103.8956"
+                    }
+		                xhttp.open('POST', 'https://localhost:7299/api/bookingitems/');
+		                // set `Content-Type` header
+		                xhttp.setRequestHeader('Content-Type', 'application/json');
+		                // send request with JSON payload
+		                xhttp.send(JSON.stringify(json));
+           }
         </script>
 
 
